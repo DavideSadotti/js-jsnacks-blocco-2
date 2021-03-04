@@ -3,6 +3,6 @@ var cognomi = ["Sadotti", "Celati", "Menchetti", "Gazzillo", "Bifaro", "Tavanti"
 var fakeList = [];
 
 for(var i = 0; i < 3; i++){
-  fakeList.push(nomi[Math.floor(Math.random() * 8)] + " " + cognomi[Math.floor(Math.random() * 8)]);
+  fakeList.push(nomi[Math.floor(Math.random() * nomi.length)] + " " + cognomi[Math.floor(Math.random() * cognomi.length)]);
   document.getElementById("lista").innerHTML += "<li>" + fakeList[i] + "</li>";
 }
